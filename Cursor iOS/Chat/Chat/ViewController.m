@@ -21,8 +21,8 @@
 
     // View Mensagens
     UIView *viewMsg = [[UIView alloc] initWithFrame:CGRectMake(
-                10,
-                10,
+                0,
+                20,
                 [UIScreen mainScreen].applicationFrame.size.width,
                 [UIScreen mainScreen].applicationFrame.size.height - 70
     )];
@@ -38,7 +38,7 @@
     [self.view addSubview:_tableview];
     
     UIView *viewControls = [[UIView alloc] initWithFrame:CGRectMake(
-                10,
+                0,
                 viewMsg.frame.size.height + 10,
                 [UIScreen mainScreen].applicationFrame.size.width,
                 50
@@ -98,8 +98,19 @@
     }
     
     cell.textLabel.text = [_dados objectAtIndex:indexPath.row];
-    //cell.textLabel.text = [NSString stringWithFormat:@"Linha %d", (int)indexPath.row];
-    //cell.imageView.image = [UIImage imageNamed:@"Icon.png"];
+  
+    cell.layer.cornerRadius = 20;
+    cell.layer.borderWidth = 2;
+    cell.layer.borderColor = [UIColor blackColor].CGColor;
+    
+    if (indexPath.row % 2 == 0) {
+        cell.backgroundColor = [UIColor colorWithRed:204/255 green:255/255 blue:153/255 alpha:1.0];
+        cell.textAlignment = UITextAlignmentLeft;
+    } else {
+        cell.backgroundColor = [UIColor colorWithRed:204/255 green:229/255 blue:255/255 alpha:1.0];
+        cell.textAlignment = UITextAlignmentRight;
+    }
+    
     return cell;
 }
 

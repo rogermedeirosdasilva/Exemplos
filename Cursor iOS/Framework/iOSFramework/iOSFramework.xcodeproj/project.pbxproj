@@ -11,6 +11,7 @@
 		570AEB491A3C61A4004E3A7A /* StringManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 570AEB481A3C61A4004E3A7A /* StringManipulation.m */; };
 		57574FDC1A3C781E00AD574B /* iOSFramework.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 570AEB2F1A3C5BB1004E3A7A /* iOSFramework.h */; };
 		57574FDD1A3C782200AD574B /* StringManipulation.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 570AEB471A3C61A4004E3A7A /* StringManipulation.h */; };
+		57574FDF1A3C7A2900AD574B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57574FDE1A3C7A2900AD574B /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		570AEB371A3C5BB1004E3A7A /* iOSFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		570AEB471A3C61A4004E3A7A /* StringManipulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StringManipulation.h; path = Strings/StringManipulation.h; sourceTree = "<group>"; };
 		570AEB481A3C61A4004E3A7A /* StringManipulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StringManipulation.m; path = Strings/StringManipulation.m; sourceTree = "<group>"; };
+		57574FDE1A3C7A2900AD574B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57574FDF1A3C7A2900AD574B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +61,7 @@
 		570AEB231A3C5BB1004E3A7A = {
 			isa = PBXGroup;
 			children = (
+				57574FDE1A3C7A2900AD574B /* Foundation.framework */,
 				570AEB2E1A3C5BB1004E3A7A /* iOSFramework */,
 				570AEB2D1A3C5BB1004E3A7A /* Products */,
 			);

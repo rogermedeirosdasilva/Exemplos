@@ -9,17 +9,9 @@
 /* Begin PBXBuildFile section */
 		570AEB321A3C5BB1004E3A7A /* iOSFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 570AEB311A3C5BB1004E3A7A /* iOSFramework.m */; };
 		570AEB491A3C61A4004E3A7A /* StringManipulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 570AEB481A3C61A4004E3A7A /* StringManipulation.m */; };
+		57574FDC1A3C781E00AD574B /* iOSFramework.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 570AEB2F1A3C5BB1004E3A7A /* iOSFramework.h */; };
+		57574FDD1A3C782200AD574B /* StringManipulation.h in Copy Files */ = {isa = PBXBuildFile; fileRef = 570AEB471A3C61A4004E3A7A /* StringManipulation.h */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		570AEB391A3C5BB1004E3A7A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 570AEB241A3C5BB1004E3A7A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 570AEB2B1A3C5BB1004E3A7A;
-			remoteInfo = iOSFramework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		570AEB2A1A3C5BB1004E3A7A /* Copy Files */ = {
@@ -28,6 +20,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				57574FDD1A3C782200AD574B /* StringManipulation.h in Copy Files */,
+				57574FDC1A3C781E00AD574B /* iOSFramework.h in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,7 +123,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				570AEB3A1A3C5BB1004E3A7A /* PBXTargetDependency */,
 			);
 			name = iOSFrameworkTests;
 			productName = iOSFrameworkTests;
@@ -200,14 +193,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		570AEB3A1A3C5BB1004E3A7A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 570AEB2B1A3C5BB1004E3A7A /* iOSFramework */;
-			targetProxy = 570AEB391A3C5BB1004E3A7A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
 		570AEB3E1A3C5BB1004E3A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -226,7 +211,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -267,7 +252,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -288,6 +273,7 @@
 		570AEB411A3C5BB1004E3A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -297,6 +283,7 @@
 		570AEB421A3C5BB1004E3A7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -352,6 +339,7 @@
 				570AEB421A3C5BB1004E3A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		570AEB431A3C5BB1004E3A7A /* Build configuration list for PBXNativeTarget "iOSFrameworkTests" */ = {
 			isa = XCConfigurationList;
@@ -360,6 +348,7 @@
 				570AEB451A3C5BB1004E3A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
